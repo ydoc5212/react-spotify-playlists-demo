@@ -1,0 +1,17 @@
+/* css files are organized by classes, which start with a dot (.)
+followed by curly braces wrapped around a bunch of colon-separated
+properties. */
+
+.NavigationBar {
+    width: 100%;
+    background: black;
+    opacity: 0.75;
+    color: white;
+    position: fixed;
+    top: 0;
+    
+}
+
+a {
+    color:white;
+}

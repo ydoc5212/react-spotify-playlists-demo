@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and Carmelle Millar's [tutorial](https://www.youtube.com/playlist?list=PL8CiOz301vHt_Bo8ZskrSlXEoPpxXyG5Y).
+
+This tool will allow you to add and view notes to songs in your spotify playlist, to extend your ability to think about music.
 
 ## Available Scripts
 

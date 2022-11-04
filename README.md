@@ -2,7 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and Carmelle Millar's [tutorial](https://www.youtube.com/playlist?list=PL8CiOz301vHt_Bo8ZskrSlXEoPpxXyG5Y).
 
-This tool will allow you to add and view notes to songs in your spotify playlist, to extend your ability to think about music.
+This tool will allow you to add and view notes to songs in your spotify playlist.
+
+This project was inspired by my desire to organize my thoughts about songs I'm listening to, and my frustration that Spotify didn't have a way to annotate playlists with notes. As a CCRMA alum, I want to build tools that help the world think about music.
 
 ## Available Scripts
 

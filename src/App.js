@@ -17,6 +17,9 @@ import './App.css';
 import NavigationBar from './components/NavigationBar'; //index.js inside the folder allows us to just link the folder
 import Hero from './components/Hero';
 import SignUpForm from "./components/SignUpForm";
+import PrivateRoute from "./components/PrivateRoute";
+import WebApp from "./pages/WebApp";
+import LoginForm from "./components/LoginForm";
 
 
 
@@ -27,6 +30,8 @@ const App = () => {
 
       <Routes>
         <Route path={ROUTES.SIGN_UP} element={<SignUpForm />} />
+        <Route path={ROUTES.LOGIN} element={<LoginForm />} />
+        <Route path={ROUTES.WEBAPP} element={<PrivateRoute><WebApp /></PrivateRoute>} />
         <Route path={ROUTES.HOME} element={<Hero />} />
 
       </Routes>

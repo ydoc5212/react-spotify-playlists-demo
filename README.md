@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and Carmelle Millar's [tutorial](https://www.youtube.com/playlist?list=PL8CiOz301vHt_Bo8ZskrSlXEoPpxXyG5Y).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and Carmelle Millar's [tutorial](https://www.youtube.com/playlist?list=PL8CiOz301vHt_Bo8ZskrSlXEoPpxXyG5Y). Simple project that allows you to login to Spotify using the Implicit Grant auth flow, and show a list of the user's playlists.
 
 ## Available Scripts
 

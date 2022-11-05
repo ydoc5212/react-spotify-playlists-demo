@@ -1,4 +1,7 @@
+// TODO refactor spotify login button logic into separate component 
 import React, { useEffect } from 'react';
+import SpotifyGetPlaylists from './components/SpotifyGetPlaylists';
+import SpotifyGetPlaylist from './components/SpotifyGetPlaylists';
 
 import './WebApp.css';
 
@@ -6,7 +9,7 @@ const CLIENT_ID = "131c63861a804b6c87cef68f5e0caf51";
 const SPOTIFY_AUTHORIZE_ENDPOINT = 'https://accounts.spotify.com/authorize';
 const REDIRECT_URI_AFTER_LOGIN = "http://localhost:3000/webapp";
 const SPACE_DELIMITER = "%20";
-const SCOPES = ['user-read-currently-playing','user-read-playback-state'];
+const SCOPES = ['user-read-currently-playing','user-read-playback-state','playlist-read-private'];
 const SCOPES_URL_PARAM = SCOPES.join(SPACE_DELIMITER);
 
 const getReturnedParamsFromSpotifyAuth = (hash) => {
@@ -47,6 +50,7 @@ const WebApp = () => {
         <div className='container'>
             <h1> Hi</h1>
             <button onClick={handleLogin}>Login to Spotify</button>
+            <SpotifyGetPlaylists />
 
         </div>
     );

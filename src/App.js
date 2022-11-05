@@ -20,23 +20,29 @@ import SignUpForm from "./components/SignUpForm";
 import PrivateRoute from "./components/PrivateRoute";
 import WebApp from "./pages/WebApp";
 import LoginForm from "./components/LoginForm";
+import { useAuth } from "./context/AuthContext";
 
 
 
 const App = () => {
+  const {isLoading} = useAuth();
   return (
-    <Router>
+
+    isLoading ? (<h1>Loading, please wait...</h1>
+    ) : (
+      <Router>
       <NavigationBar />
 
       <Routes>
         <Route path={ROUTES.SIGN_UP} element={<SignUpForm />} />
         <Route path={ROUTES.LOGIN} element={<LoginForm />} />
+        {/* we're using /webapp as our redirect URI after auth success/fail */}
         <Route path={ROUTES.WEBAPP} element={<PrivateRoute><WebApp /></PrivateRoute>} />
         <Route path={ROUTES.HOME} element={<Hero />} />
 
       </Routes>
 
-    </Router>
+    </Router>)
   );
 }
 
